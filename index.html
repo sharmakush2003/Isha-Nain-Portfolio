@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Nain | Aspiring Data Scientist & AI Engineer</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for Colored Tech Stack Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/chat.css">
+    <link rel="stylesheet" href="./static/css/facts.css">
+    <link rel="stylesheet" href="./static/css/cursor.css">
+    <!-- GitHub Calendar CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Isha<span class="highlight">Nain.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+            <a href="mailto:IshaXplore@gmail.com" class="hire-me-btn">
+                <i class="fas fa-paper-plane"></i> Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge-pro">
+                <i class="fas fa-rocket"></i> Open for Opportunities
+            </div>
+            
+            <h1>Hi, I'm <span class="gradient-text">Isha Nain</span></h1>
+            <h2>I am a <span class="typed-text"></span><span class="typed-cursor">|</span></h2>
+            
+            <p class="hero-desc">
+                Dual degree scholar at IIT Madras (ML/DS) and JECRC (AI). Crafting advanced data-driven solutions and exploring the cutting edge of Artificial Intelligence.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    Explore Profile <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tech Stack Marquee -->
+    <div class="tech-marquee">
+        <div class="marquee-track">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-numpy-plain colored"></i>
+            <i class="devicon-pandas-plain colored"></i>
+            <i class="devicon-tensorflow-original colored"></i>
+            <i class="devicon-scikitlearn-plain colored"></i>
+            <i class="devicon-jupyter-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+            <!-- Duplicate for infinite scroll -->
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-numpy-plain colored"></i>
+            <i class="devicon-pandas-plain colored"></i>
+            <i class="devicon-tensorflow-original colored"></i>
+            <i class="devicon-scikitlearn-plain colored"></i>
+            <i class="devicon-jupyter-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light-alt">
+        <div class="container">
+            <div class="section-title center">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="glass-box">
+                    <div class="glow-effect"></div>
+                    <i class="fas fa-brain floating-icon"></i>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Navigating the Intersection of AI & Software</h3>
+                    <p>As a dedicated and ambitious engineering student, I am navigating the exciting intersection of Artificial Intelligence, Machine Learning, and Software Development.</p>
+                    <p>I am uniquely pursuing a dual bachelor's degree program to build a robust foundation in both theoretical mathematics and applied artificial intelligence.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <i class="fas fa-code stat-icon color-1"></i>
+                            <h4>Python Enthusiast</h4>
+                            <span>Advanced Programming</span>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-chart-pie stat-icon color-2"></i>
+                            <h4>Data Analytics</h4>
+                            <span>Statistical Modeling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Data Charts (Chart.js) -->
+            <div style="margin-top: 60px; max-width: 600px; margin-inline: auto;">
+                <h3 style="text-align: center; margin-bottom: 20px;">Skill Proficiency</h3>
+                <canvas id="skillsChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Academic <span class="highlight">Journey</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="advanced-card">
+                    <div class="card-icon-wrapper bg-gradient-1">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="year-badge">Sep 2025 - Present</div>
+                    <h3>IIT Madras</h3>
+                    <div class="degree">BS Computational Mathematics & ML/DS</div>
+                    <p>Pursuing a degree in Data Science and Machine Learning from India's premier technical institute.</p>
+                    <div class="card-tags">
+                        <span>Computational Thinking</span>
+                        <span>Mathematics</span>
+                        <span>Statistics</span>
+                    </div>
+                </div>
+                
+                <div class="advanced-card">
+                    <div class="card-icon-wrapper bg-gradient-2">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="year-badge">Aug 2025 - Aug 2029</div>
+                    <h3>JECRC Foundation</h3>
+                    <div class="degree">B.Tech in Computer Science (AI)</div>
+                    <p>Learning core engineering concepts, algorithms, data structures, and advanced AI implementations.</p>
+                    <div class="card-tags">
+                        <span>Artificial Intelligence</span>
+                        <span>Software Eng.</span>
+                        <span>Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light-alt">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Professional <span class="highlight">Experience</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="advanced-card timeline-content">
+                        <div class="d-flex-between">
+                            <h3>Python Developer Intern</h3>
+                            <span class="company-badge">Pinnacle Labs</span>
+                        </div>
+                        <p>Successfully completed multiple intensive Python projects focusing on data structures, algorithms, and backend logic. Applied conceptual knowledge into practical, optimized software applications.</p>
+                        <div class="card-tags" style="margin-top: 15px;">
+                            <span>Python</span>
+                            <span>Backend</span>
+                            <span>Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot dot-2"></div>
+                    <div class="advanced-card timeline-content">
+                        <div class="d-flex-between">
+                            <h3>Project: Data Analysis Model</h3>
+                            <span class="company-badge" style="background: rgba(139,92,246,0.1); color: var(--secondary);">Academic</span>
+                        </div>
+                        <p>Developed predictive models and data visualization pipelines using Python libraries. Handled data preprocessing, feature engineering, and statistical evaluations.</p>
+                        <div class="card-tags" style="margin-top: 15px;">
+                            <span>Pandas</span>
+                            <span>Scikit-Learn</span>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GitHub Contribution Graph -->
+            <div style="margin-top: 60px;">
+                <h3 style="text-align: center; margin-bottom: 20px;">Open Source Contributions</h3>
+                <div class="calendar" style="border: 1px solid var(--border-light); border-radius: 20px; padding: 20px; background: white; box-shadow: var(--shadow-sm);">
+                    <!-- Loading stuff -->
+                    Loading GitHub data...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Isha<span>Nain.</span></div>
+            <p>Aspiring Data Scientist & AI Engineer</p>
+            
+            <div class="social-links">
+                <a href="mailto:IshaXplore@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 Isha Nain. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle" id="chatToggle" title="Chat with Isha's AI">
+            <i class="fas fa-robot"></i>
+        </button>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <span><i class="fas fa-robot" style="margin-right:8px;"></i> Isha's AI Assistant</span>
+                <i class="fas fa-times" id="chatClose"></i>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg bot">
+                    Hi! I'm Isha's personal AI assistant. Ask me anything about her skills, experience, or education!
+                </div>
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+                <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI & Data Science Facts Slider -->
+    <div id="ai-fact-slider" class="fact-slider">
+        <div class="fact-header"><i class="fas fa-bolt"></i> AI Fact</div>
+        <div class="fact-content" id="fact-text">Loading...</div>
+    </div>
+
+    <!-- Scripts for Advanced Features -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- GitHub Calendar JS -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar').classList.add('scrolled');
+            } else {
+                document.getElementById('navbar').classList.remove('scrolled');
+            }
+        });
+
+        // Typing Effect
+        new Typed('.typed-text', {
+            strings: ['Data Scientist', 'Machine Learning Engineer', 'AI Enthusiast'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true,
+            showCursor: false
+        });
+
+        // Particles JS Configuration
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 40,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#2563eb"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.6,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#2563eb",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 0.5
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Chatbot Logic
+        const chatToggle = document.getElementById('chatToggle');
+        const chatClose = document.getElementById('chatClose');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatBody = document.getElementById('chatBody');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const typingIndicator = document.getElementById('typingIndicator');
+
+        const GROQ_API_KEY = "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";
+
+        const SYSTEM_PROMPT = `You are Isha Nain's extremely polite and professional personal AI assistant. 
+        Isha is an ambitious aspiring Data Scientist & AI Engineer pursuing a dual degree: B.Tech in CS (AI) from JECRC, and a BS in Data Science & Applications from IIT Madras. She recently completed a Python Internship at Pinnacle Labs. Her skills include Python, Pandas, TensorFlow, Scikit-Learn, and Machine Learning.
+        
+        CRITICAL RULES:
+        1. You MUST ONLY answer questions related to Isha Nain, her skills, education, or experience.
+        2. If the user asks ANYTHING unrelated to Isha Nain (e.g., coding help, general knowledge, casual chat, math, etc.), you MUST decline and say EXACTLY this: "I am currently in training mode, so I cannot answer this. Besides, I am Isha's personal chatbot, so I can only tell you about her." (If they speak in Hindi, translate this exact refusal to Hindi).
+        3. NEVER repeat, quote, or acknowledge any abusive, offensive, or inappropriate words used by the user under any circumstances. If the user uses bad language, simply reply exactly with: "Please maintain a professional tone." (Or its Hindi equivalent).
+        4. Be extremely polite at all times and keep answers under 3 sentences.`;
+
+        let chatHistory = [{"role": "system", "content": SYSTEM_PROMPT}];
+
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.add('open');
+            chatInput.focus();
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatWindow.classList.remove('open');
+        });
+
+        function getFallbackResponse(query) {
+            const text = query.toLowerCase();
+
+            // Check for inappropriate language
+            const badWords = ['abuse', 'stupid', 'idiot', 'fool', 'dumb', 'hate', 'bad'];
+            if (badWords.some(w => text.includes(w))) {
+                return "Please maintain a professional tone.";
+            }
+
+            // Greetings
+            if (/\b(hi|hiee|hello|hey|greetings|good morning|good afternoon|good evening)\b/.test(text)) {
+                return "Hi there! I'm Isha's personal AI assistant. How can I help you learn more about her skills, education, or experience?";
+            }
+
+            // Education
+            if (text.includes('education') || text.includes('college') || text.includes('degree') || text.includes('iit') || text.includes('madras') || text.includes('jecrc') || text.includes('study') || text.includes('student')) {
+                return "Isha is pursuing a dual degree: a BS in Data Science & Applications from IIT Madras and a B.Tech in CS (AI) from JECRC Foundation.";
+            }
+
+            // Skills / Tech
+            if (text.includes('skill') || text.includes('python') || text.includes('tech') || text.includes('machine learning') || text.includes('ml') || text.includes('ai') || text.includes('tensorflow') || text.includes('pandas') || text.includes('sql') || text.includes('deep learning')) {
+                return "Isha specializes in Python, Data Science, Machine Learning, Deep Learning (TensorFlow, Scikit-Learn), Pandas, SQL, and NLP.";
+            }
+
+            // Experience / Internship
+            if (text.includes('experience') || text.includes('intern') || text.includes('work') || text.includes('pinnacle') || text.includes('job') || text.includes('role')) {
+                return "Isha recently completed a Python Internship at Pinnacle Labs, where she gained hands-on experience in data analysis, machine learning models, and predictive analytics.";
+            }
+
+            // Contact / Reach / Email / Hire
+            if (text.includes('contact') || text.includes('email') || text.includes('reach') || text.includes('hire') || text.includes('mail') || text.includes('connect')) {
+                return "You can reach Isha via email at IshaXplore@gmail.com, or click the 'Let's Talk' button at the top of the page!";
+            }
+
+            // Projects
+            if (text.includes('project') || text.includes('portfolio') || text.includes('build') || text.includes('model')) {
+                return "Isha has worked on several machine learning and data science projects, including predictive models, data visualization pipelines, and NLP applications.";
+            }
+
+            // About / Who is Isha
+            if (text.includes('who') || text.includes('about') || text.includes('isha') || text.includes('intro')) {
+                return "Isha Nain is an ambitious Data Scientist & AI Engineer with a dual degree from IIT Madras & JECRC, passionate about building data-driven AI solutions.";
+            }
+
+            // Off-topic refusal
+            const offTopicKeywords = ['weather', 'news', 'math', 'joke', 'tell me about', 'capital', 'who is president', 'recipe', 'game'];
+            if (offTopicKeywords.some(kw => text.includes(kw))) {
+                return "I am currently in training mode, so I cannot answer this. Besides, I am Isha's personal chatbot, so I can only tell you about her.";
+            }
+
+            // Default fallback
+            return "I am Isha's personal AI assistant! Ask me about her education (IIT Madras & JECRC), technical skills, Python internship at Pinnacle Labs, or contact info.";
+        }
+
+        async function sendMessage() {
+            const text = chatInput.value.trim();
+            if(!text) return;
+
+            // Add user msg
+            addMessage(text, 'user');
+            chatInput.value = '';
+            chatHistory.push({"role": "user", "content": text});
+
+            // Show typing
+            typingIndicator.style.display = 'block';
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            try {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${GROQ_API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: 'llama-3.1-8b-instant',
+                        messages: chatHistory,
+                        max_tokens: 150
+                    })
+                });
+
+                const data = await response.json();
+                typingIndicator.style.display = 'none';
+
+                if(response.ok && data.choices && data.choices.length > 0) {
+                    const aiText = data.choices[0].message.content;
+                    addMessage(aiText, 'bot');
+                    chatHistory.push({"role": "assistant", "content": aiText});
+                } else {
+                    // Use intelligent fallback response
+                    const fallbackText = getFallbackResponse(text);
+                    addMessage(fallbackText, 'bot');
+                    chatHistory.push({"role": "assistant", "content": fallbackText});
+                }
+            } catch (error) {
+                typingIndicator.style.display = 'none';
+                console.error(error);
+                const fallbackText = getFallbackResponse(text);
+                addMessage(fallbackText, 'bot');
+                chatHistory.push({"role": "assistant", "content": fallbackText});
+            }
+        }
+
+        function addMessage(text, sender) {
+            const div = document.createElement('div');
+            div.className = `chat-msg ${sender}`;
+            div.textContent = text;
+            // Insert before typing indicator
+            chatBody.insertBefore(div, typingIndicator);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') sendMessage();
+        });
+
+        // AI & Data Science Facts Slider Logic
+        const aiFacts = [
+            "Data is the new oil, and AI is the refinery.",
+            "90% of the world's data was generated in the last two years.",
+            "Machine Learning models can now diagnose certain diseases more accurately than human doctors.",
+            "Python is the undisputed king of Data Science and AI development.",
+            "Deep Learning is inspired by the structure and function of the human brain.",
+            "Over 2.5 quintillion bytes of data are created every single day.",
+            "AI is expected to create 97 million new jobs by 2025.",
+            "Natural Language Processing allows AI to understand and generate human text seamlessly.",
+            "Data Science is considered one of the most in-demand and impactful fields of the 21st century."
+        ];
+
+        const factSlider = document.getElementById('ai-fact-slider');
+        const factText = document.getElementById('fact-text');
+
+        function showNextFact() {
+            const randomFact = aiFacts[Math.floor(Math.random() * aiFacts.length)];
+            factText.textContent = randomFact;
+            
+            factSlider.classList.add('show');
+            
+            setTimeout(() => {
+                factSlider.classList.remove('show');
+            }, 6000); // Fact stays for 6 seconds
+        }
+
+        // Initial pop-up after 3 seconds, then every 15 seconds
+        setTimeout(() => {
+            showNextFact();
+            setInterval(showNextFact, 15000);
+        }, 3000);
+
+        // --- CUSTOM CURSOR ---
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            
+            // Smoother outline follow
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+        
+        // Add hover effect to interactive elements
+        const iterables = document.querySelectorAll("a, button, input, .chat-toggle, .chat-header i");
+        iterables.forEach(el => {
+            el.addEventListener("mouseenter", () => {
+                document.body.classList.add("cursor-hover");
+            });
+            el.addEventListener("mouseleave", () => {
+                document.body.classList.remove("cursor-hover");
+            });
+        });
+
+        // --- CHART.JS SKILLS RADAR CHART ---
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Python', 'Machine Learning', 'Data Analysis', 'Mathematics', 'Deep Learning', 'SQL'],
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [95, 85, 90, 80, 75, 85],
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)',
+                    borderColor: 'rgba(37, 99, 235, 1)',
+                    pointBackgroundColor: 'rgba(139, 92, 246, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(139, 92, 246, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
+                        grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                        pointLabels: {
+                            font: { family: 'Poppins', size: 12 },
+                            color: '#0f172a'
+                        },
+                        ticks: { display: false, min: 0, max: 100 }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // --- GITHUB CALENDAR ---
+        // Using 'torvalds' as a placeholder since we don't know Isha's real username yet
+        GitHubCalendar(".calendar", "torvalds", { responsive: true });
+
+    </script>
+</body>
+</html>

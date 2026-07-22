@@ -1,0 +1,40 @@
+/* Custom Cursor */
+body {
+    cursor: none;
+}
+
+a, button, input, .chat-toggle, .chat-header i {
+    cursor: none;
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary);
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--primary-light);
+    transition: width 0.2s, height 0.2s, border-color 0.2s;
+}
+
+/* Hover effects for cursor */
+.cursor-hover .cursor-outline {
+    width: 60px;
+    height: 60px;
+    border-color: var(--accent);
+    background-color: rgba(244, 63, 94, 0.1);
+}

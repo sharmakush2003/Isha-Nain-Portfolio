@@ -1,0 +1,58 @@
+/* AI Facts Slider */
+.fact-slider {
+    position: fixed;
+    top: 100px;
+    left: -400px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-left: 5px solid var(--primary);
+    border-radius: 0 20px 20px 0;
+    padding: 18px 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 999;
+    transition: left 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fact-slider.show {
+    left: 0;
+}
+
+.fact-header {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fact-content {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .fact-slider {
+        width: 280px;
+        top: auto;
+        bottom: 80px;
+        left: auto;
+        right: -300px;
+        border-left: none;
+        border-right: 5px solid var(--primary);
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .fact-slider.show {
+        left: auto;
+        right: 0;
+    }
+}
